@@ -25,6 +25,8 @@ body {
   	line-height: 1.75;
 }
 
+/*Обертка*/
+
 .wrapper {
 	display: flex;
 	flex-flow: row wrap;
@@ -34,6 +36,8 @@ body {
 	min-height: 688px;
 	background-color: #F6F2F2;
 }
+
+/*Хедер*/
 
 .page-header {
 	margin: 0 auto;
@@ -68,18 +72,6 @@ body {
 	box-sizing: border-box;
 }
 
-@media screen and (max-width: 350px) {
-    .site-menu {
-    	flex-flow: column;
-	}
-    .site-menu a {
-        width: 100%;
-        margin-bottom: 1em;
-
-    }
-      
-}
-
 .site-menu a:hover {
 	background-color: #FF3F40;
 }	
@@ -87,6 +79,8 @@ body {
 .site-menu a:active {
 	background-color: rgba(255, 255, 255, 0.3);
 }	
+
+/*Основная статья*/
 
 .promo-container {
 	margin: 0 auto;
@@ -114,17 +108,6 @@ body {
 	letter-spacing: 1.7px;
 	padding-bottom: 20px;
 	
-}
-
-@media screen and (max-width: 350px) {
-    .main-article {
-    	width: 100%;
-	}
-    .main-article h1 {
-        font-size: 1.5em;
-
-    }
-      
 }
 
 span.style-text {
@@ -169,16 +152,14 @@ p.promo-text {
 	border: 2px solid #FF2D2D;
 }
 
-.right-section {
-	max-height: 354px;
-
-}
-
 .right-section img {
-	width: 100%;
+	max-width: 100%;
 	margin-top: 13px;
 	box-sizing: border-box;
+	box-shadow: 0 -10px 40px 0 rgb(124, 124, 124);
 }
+
+/*Преимущества*/
 
 .features {
 	max-width: 1249px;
@@ -193,7 +174,6 @@ p.promo-text {
 	max-width: 1285px;
 	min-height: 596px;
 	border-bottom: 2px solid lightgrey;
-	
 	
 }
 
@@ -215,22 +195,6 @@ h2.header-features {
 	font-family: "OpenSans Bold";
 	text-transform: uppercase;
 	letter-spacing: 0.45px;
-}
-
-@media screen and (max-width: 350px) {
-    h2.header-features {
-    	font-size: 1.5em;
-    	line-height: 1.15;
-	}
-      .features {
-		justify-content: center;
-		padding-left: 0;
-	}
-
-	.about-us-container,
-	.services-container {
-		width: 100%;
-	}
 }
 
 .about-us-container p {
@@ -286,6 +250,8 @@ h2.header-features {
 	
    }
 
+
+/*Услуги*/
 
 .features-products {
 	display: flex;
@@ -356,20 +322,6 @@ h2.header-features {
 }
 
 
-@media screen and (max-width: 350px) {
-    .features-products-menu {
-    	flex-flow: column wrap;
-	}
-    
-    .features-products-menu a {
-    	width: 100%;
-    	text-align: center;
-    	margin-bottom: 0.5em;
-		margin-top: 0;
-    }
-      
-}
-
 .catalog-products {
 	max-width: 1300px;
 	min-height: 620px;
@@ -387,31 +339,7 @@ h2.header-features {
 	
 }
 
-
-@media screen and (max-width: 900px) {
-	.catalog-products {
-		justify-content: flex-start;
-	}
-	.element {
-		width: 299px;
-		max-width: 100%;
-		margin-right: 1vw;
-	}
-
-}
-
-@media screen and (max-width: 768px) {
-	.navigation-bar-menu {
-		width: 100%;
-		text-align: center;
-	}
-	.about-us-container,
-	.services-container {
-		width: 100%;
-		max-width: 100%;
-	}
-}
-
+/*Наша команда*/
 
 .our-team {
 	display: flex;
@@ -452,14 +380,6 @@ h2.header-features {
 	border: none;
 	margin-top: 30px;
 
-}
-
-@media screen and (max-width: 350px) {
-    .team-promo h2 {
-        font-size: 2em;
-        align-items: center;
-    }
-    
 }
 
 .team-mates {
@@ -506,18 +426,6 @@ h3.team-member-info {
 	flex-wrap: wrap;
 }
 
-@media screen and (max-width: 350px) {
-    .member-social-nav {
-        justify-content: center;
-    }
-    
-    .member-social-nav a {
-		width: 50%;
-		margin: auto;
-
-    }
-}
-
 .member-social-nav a {
 	margin-right: 30px;
 	text-decoration: none;
@@ -546,6 +454,7 @@ h3.team-member-info {
 	margin-right: 18px;
 }
 
+/*Оформление подписки*/
 
 .subscription {
 	margin: 0 auto;
@@ -621,27 +530,7 @@ h3.team-member-info {
 	background-color: rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (max-width: 768px) {
-        .subscription-header {
-    		font-size: 2em;
-    }
-
-    	.subscription-form {
-			max-width: 90vw;
-			justify-content: center;
-
-    }
-		.subscription-form input[type="email"] {
-			margin-bottom: 1vh;
-			min-height: 58px;
-			align-self: center;
-		}
-
-		.subscription-form input[type="submit"] {
-			height: 48px;
-		}
-}
-
+/*Фидбэк*/
 
 .get-in-touch {
 	margin: 0 auto;
@@ -679,27 +568,6 @@ h3.team-member-info {
 	margin-bottom: 50px;
 }
 
-@media screen and (max-width: 350px) {
-    .get-in-touch-container {
-    	max-width: 95vw;
-    	margin-left: 0;
-
-    }
-    .get-in-touch-container h2 {
-    	font-size: 2em;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .get-in-touch-container {
-    	max-width: 95vw;
-    	margin-left: 0;
-    }
-    .get-in-touch-container h2 {
-    	font-size: 2em;
-    }
-}
-
 .get-in-touch-hl {
 	width: 122px;
 	height: 3px;
@@ -715,11 +583,6 @@ h3.team-member-info {
 	color: black;
 	border-style: none;
 
-	
-}
-
-fieldset {
-	border-style: none;
 }
 
 .message-form input {
@@ -788,7 +651,6 @@ fieldset {
   	text-transform: uppercase;
 }
 
-
 .message-form input[type="submit"]:active {
 	background-color: rgba(255, 255, 255, 0.3);
 	color: black;
@@ -827,24 +689,8 @@ fieldset {
 	padding-bottom: 15px;
 }
 
-/*@media screen and (max-width: 350px) {
-    .message-form {
-    	max-width: 95vw;
-    	margin-left: 0;
+/*Подвал*/
 
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .message-form {
-    	max-width: 95vw;
-    	margin-left: 0;
-
-    }
-    
-}
-*/
 .page-footer {
 	margin: 0 auto;
 	max-width: 1578px;
@@ -874,11 +720,218 @@ fieldset {
 	padding-right: 1em;
 }
 
-@media screen and (max-width: 400px) {
-    .social {
+/* Адаптивность */
+
+@media screen and (max-width: 1286px) {
+	
+	.right-section {
+		width: 50%;
+		height: auto;
+	}
+	.right-section img {
+		width: 100%;
+		height: auto;
+	}
+	.catalog-products {
+		justify-content: flex-start;
+	}
+	.element {
+		width: 299px;
+		max-width: 100%;
+		margin-right: 1vw;
+	}
+	.get-in-touch {
+		flex-wrap: wrap;
+		padding-left: initial;
+    	padding-right: initial;
+	}
+	.get-in-touch-container {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		padding: 0 1vw;
+	}
+	.contact-info {
+		width: 100%;
+		max-width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 900px) {
+	.team-mate-container {
+		position: initial;
+	}
+	.features-products-menu > li {
+		width: 100%;
+		text-align: center;
+	}
+	.features {
+		justify-content: center;
+	}
+	.about-us-container,
+	.services-container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.catalog-products {
+		justify-content: flex-start;
+	}
+	.element {
+		width: 299px;
+		max-width: 100%;
+		margin-right: 1vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.about-us-container {
+		width: 100%;
+		max-width: 100%;
+	}
+	.services-container {
+		width: 100%;
+		max-width: 100%;
+	}
+	.contact-info {
+		padding: 1vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.subscription-header {
+    	font-size: 2em;
+    }
+	
+	.subscription-form {
+		max-width: 90vw;
+		justify-content: center;
+	}
+
+	.message-form input[type="text"],
+	.message-form input[type="email"],
+	.message-form textarea,
+	.message-form input[type="submit"] {
+		width: 100%;
+		max-width: 100%;
+	}
+	.subscription-form input[type="email"] {
+		margin-bottom: 1vh;
+		min-height: 58px;
+		align-self: center;
+	}
+
+	.subscription-form input[type="submit"] {
+		height: 48px;
+	}
+
+	.message-form input[type="text"] {
+		margin-right: 0;
+	}
+	.navigation-bar-menu {
+		width: 100%;
+		text-align: center;
+	}
+	.about-us-container,
+	.services-container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.get-in-touch-container {
+    	max-width: 95vw;
+    	margin-left: 0;
+    }
+    .get-in-touch-container h2 {
+    	font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+	.page-header {
+		padding-left: 20px;
+	}
+	.promo-container {
+		flex-wrap: wrap;
+	}
+	.main-article {
+		width: 100%;
+	}
+	.right-section {
+		width: 100%;
+	}
+	.right-section img {
+		width: 100%;
+		height: auto;
+	}
+	.main-article h1 {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 350px) {
+    .main-article {
+    	width: 100%;
+	}
+    .main-article h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .site-menu {
     	flex-flow: column;
-    	margin: 0;
-    	
+	}
+    .site-menu a {
+        width: 100%;
+        margin-bottom: 1em;
+
+    }
+
+	 h2.header-features {
+    	font-size: 1.5em;
+    	line-height: 1.15;
+    	text-align: center;
+	}
+      .features {
+		justify-content: center;
+		padding-left: 0;
+	}
+
+	.about-us-container,
+	.services-container {
+		width: 100%;
+	}
+
+	.team-promo h2 {
+        font-size: 2em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .member-social-nav {
+        flex-direction: column;
+        margin: auto;
     }
     
+    .member-social-nav a {
+		width: 50%;
+		margin: auto;
+
+    }
+	
+	.member-profile {
+		margin: auto;
+	}
+
+	.get-in-touch-container {
+    	max-width: 95vw;
+    	margin-left: 0;
+    }
+
+	.get-in-touch-container{
+    	text-align: center;
+    }
+    .subscription-form {
+		flex-wrap: wrap;
+	}
 }
